@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Destinations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+  <header class="body-font bg-blue-950 fixed top-0 left-0 w-full shadow-md z-50 text-white">
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSideBar(event)><a href="" class="cross"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="clgofeng.html">Dreamers College of English</a></li>
+        <li><a href="destinations.html">Study Destinations</a></li>
+        <li><a href="query.html">Quick Query</a></li>
+        <li><a href="contact.html" target="_blank" class="cta">Contact Us</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html"><img src="DREAMERS.png" alt="logo" height="150px" width="150px"></a></li>
+        <li class="hideonmobile"><a class="hover:text-yellow-500" href="index.html">Home</a></li>
+        <li class="hideonmobile"><a class="hover:text-yellow-500" href="services.html">Services</a></li>
+        <li class="hideonmobile"><a class="hover:text-yellow-500"  href="clgofeng.html">Dreamers College of English</a></li>
+        <li class="hideonmobile"><a class="text-yellow-500" href="destinations.html">Study Destinations</a></li>
+        <li class="hideonmobile"><a class="hover:text-yellow-500" href="query.html">Quick Query</a></li>
+        <li class="hideonmobile"><a class="hover:text-yellow-500" href="contact.html" target="_blank" class="cta">Contact Us</a></li>
+        <li onclick=showSideBar(event)><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    function showSideBar(event){
+      event.preventDefault();
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex';
+    }
+    function hideSideBar(event){
+      event.preventDefault();
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none';
+    }
+  </script>
+      <main>
+        <div class="relative h-96 bg-cover bg-center bg-[url('https://img.freepik.com/premium-photo/students-are-standing-corridor-university_85574-8145.jpg?uid=R151238481&ga=GA1.1.82491892.1725290807&semt=ais_hybrid')]">
+          <!-- Overlay for background opacity -->
+          <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+          <!-- Flex container to center text -->
+          <div class="relative h-full flex flex-col justify-center items-center text-center">
+            <h1 class="text-4xl font-bold text-white">Study Destinations</h1>
+            <p class="mt-2 text-lg text-white">Explore the world's best universities and study abroad.</p>
+          </div>
+        </div>
+      </main>
+
+
+
+<!-- uk -->
+      <section class="text-gray-600 body-font relative">
+        <div class="container mx-auto px-5 py-24">
+          <div class="flex flex-wrap lg:flex-nowrap">
+            <!-- Left Side (Text Section) -->
+            <div class="w-full lg:w-2/5 lg:pr-10 mb-10 lg:mb-0">
+              <h2 id="uk-u" class="text-3xl font-bold text-yellow-700 mb-4 mt-10">UK Universities </h2>
+              <!-- <p class="text-lg text-gray-700 mb-6">
+                Discover endless opportunities and connect with global institutions. Join us to unlock your potential and achieve your dreams.
+              </p> -->
+              <ul class="list-disc list-inside text-gray-900  mt-10 text-sm sm:text-base lg:text-lg">
+                <li>University of Oxford</li>
+                <li>University of Cambridge</li>
+                <li>Imperial College London</li>
+                <li>London School of Economics and Political Science (LSE)</li>
+                <li>University College London (UCL)</li>
+                <li>University of Manchester</li>
+                <li>University of Edinburgh</li>
+                <li>University of Glasgow</li>
+                <li>King’s College London</li>
+                <li>University of Birmingham</li>
+              </ul>
+            </div>
+            <!-- Right Side (Form Section) -->
+            <div class="w-full lg:w-3/5 bg-white rounded-lg shadow-lg p-8">
+              <h2 class="text-2xl font-bold text-blue-950 mb-6">Register Consultation for UK</h2>
+              <form id="uk-form" data-country="UK">
+                <div class="flex flex-wrap -mx-2">
+                  <div class="w-full md:w-1/2 px-2 mb-4">
+                    <label for="name" class="block text-sm text-gray-600 mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  </div>
+                  <div class="w-full md:w-1/2 px-2 mb-4">
+                    <label for="email" class="block text-sm text-gray-600 mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  </div>
+                  <div class="w-full px-2 mb-4">
+                    <label for="message" class="block text-sm text-gray-600 mb-2">Service</label>
+                    <textarea id="message" name="message" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                  </div>
+                  <div class="w-full px-2">
+                    <button type="submit" class="w-70 bg-blue-950 text-white py-2 px-4 rounded hover:bg-yellow-700">
+                      Submit Form
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- australia -->
+      <section class="text-gray-600 body-font relative">
+        <div class="container mx-auto px-5 py-24">
+          <div class="flex flex-wrap lg:flex-nowrap">
+            <!-- Left Side (Text Section) -->
+            <div class="w-full lg:w-2/5 lg:pr-10 mb-10 lg:mb-0">
+              <h2 id="australia-u" class="text-3xl font-bold text-yellow-700 mb-4 mt-10">Australia Universities </h2>
+              <!-- <p class="text-lg text-gray-700 mb-6">
+                Discover endless opportunities and connect with global institutions. Join us to unlock your potential and achieve your dreams.
+              </p> -->
+              <ul class="list-disc list-inside text-gray-900  mt-10 text-sm sm:text-base lg:text-lg">
+                <li>University of Sydney</li>
+                <li>University of Melbourne</li>
+                <li>Australian National University (ANU)</li>
+                <li>University of Queensland (UQ)</li>
+                <li>University of New South Wales (UNSW)</li>
+                <li>Monash University</li>
+                <li>University of Western Australia (UWA)</li>
+                <li>University of Adelaide</li>
+                <li>RMIT University</li>
+                <li>University of Technology Sydney (UTS)</li>
+              </ul>
+            </div>
+            <!-- Right Side (Form Section) -->
+            <div class="w-full lg:w-3/5 bg-white rounded-lg shadow-lg p-8">
+              <h2 class="text-2xl font-bold text-blue-950 mb-6">Register Consultation for Australia</h2>
+              <form id="australia-form" data-country="Australia">
+                <div class="flex flex-wrap -mx-2">
+                  <div class="w-full md:w-1/2 px-2 mb-4">
+                    <label for="name" class="block text-sm text-gray-600 mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  </div>
+                  <div class="w-full md:w-1/2 px-2 mb-4">
+                    <label for="email" class="block text-sm text-gray-600 mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  </div>
+                  <div class="w-full px-2 mb-4">
+                    <label for="message" class="block text-sm text-gray-600 mb-2">Service</label>
+                    <textarea id="message" name="message" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                  </div>
+                  <div class="w-full px-2">
+                    <button type="submit" class="w-70 bg-blue-950 text-white py-2 px-4 rounded hover:bg-yellow-700">
+                      Submit Form
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- ireland -->
+<section class="text-gray-600 body-font relative">
+    <div class="container mx-auto px-5 py-24">
+      <div class="flex flex-wrap lg:flex-nowrap">
+        <!-- Left Side (Text Section) -->
+        <div class="w-full lg:w-2/5 lg:pr-10 mb-10 lg:mb-0">
+          <h2 id="ireland-u" class="text-3xl font-bold text-yellow-700 mt-10">Ireland Universities </h2>
+          <!-- <p class="text-lg text-gray-700 mb-6">
+            Discover endless opportunities and connect with global institutions. Join us to unlock your potential and achieve your dreams.
+          </p> -->
+          <ul class="list-disc list-inside text-gray-900  mt-10 text-sm sm:text-base lg:text-lg">
+            <li>Trinity College Dublin (TCD)</li>
+            <li>University College Dublin (UCD)</li>
+            <li>University of Galway</li>
+            <li>Dublin City University (DCU)</li>
+            <li>University College Cork (UCC)</li>
+            <li>Technological University Dublin (TU Dublin)</li>
+            <li>Maynooth University</li>
+            <li>National University of Ireland, Galway (NUIG)</li>
+            <li>Royal College of Surgeons in Ireland (RCSI)</li>
+            <li>Limerick Institute of Technology (LIT)</li>
+          </ul>
+        </div>
+        <!-- Right Side (Form Section) -->
+        <div class="w-full lg:w-3/5 bg-white rounded-lg shadow-lg p-8">
+          <h2 class="text-2xl font-bold text-blue-950 mb-6">Register Consultation for Ireland</h2>
+          <form id="ire-form" data-country="Ireland">
+            <div class="flex flex-wrap -mx-2">
+              <div class="w-full md:w-1/2 px-2 mb-4">
+                <label for="name" class="block text-sm text-gray-600 mb-2">Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="w-full md:w-1/2 px-2 mb-4">
+                <label for="email" class="block text-sm text-gray-600 mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="w-full px-2 mb-4">
+                <label for="message" class="block text-sm text-gray-600 mb-2">Service</label>
+                <textarea id="message" name="message" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+              <div class="w-full px-2">
+                <button type="submit" class="w-70 bg-blue-950 text-white py-2 px-4 rounded hover:bg-yellow-700">
+                  Submit Form
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UAE -->
+  <section class="text-gray-600 body-font relative">
+    <div class="container mx-auto px-5 py-24">
+      <div class="flex flex-wrap lg:flex-nowrap">
+        <!-- Left Side (Text Section) -->
+        <div class="w-full lg:w-2/5 lg:pr-10 mb-10 lg:mb-0">
+          <h2 id="uae-u" class="text-3xl font-bold text-yellow-700 mb-4 mt-10">UAE Universities </h2>
+          <!-- <p class="text-lg text-gray-700 mb-6">
+            Discover endless opportunities and connect with global institutions. Join us to unlock your potential and achieve your dreams.
+          </p> -->
+          <ul class="list-disc list-inside text-gray-900  mt-10 text-sm sm:text-base lg:text-lg">
+            <li>United Arab Emirates University (UAEU)</li>
+            <li>American University of Sharjah (AUS)</li>
+            <li>University of Sharjah (UoS)</li>
+            <li>American University in Dubai (AUD)</li>
+            <li>Zayed University</li>
+            <li>University of Wollongong in Dubai (UOWD)</li>
+            <li>Abu Dhabi University (ADU)</li>
+            <li>Canadian University Dubai (CUD)</li>
+            <li>Murdoch University Dubai</li>
+            <li>Heriot-Watt University Dubai</li>
+          </ul>
+        </div>
+        <!-- Right Side (Form Section) -->
+        <div class="w-full lg:w-3/5 bg-white rounded-lg shadow-lg p-8">
+          <h2 class="text-2xl font-bold text-blue-950 mb-6">Register Consultation for UAE</h2>
+          <form id="uae-form" data-country="UAE">
+            <div class="flex flex-wrap -mx-2">
+              <div class="w-full md:w-1/2 px-2 mb-4">
+                <label for="name" class="block text-sm text-gray-600 mb-2">Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="w-full md:w-1/2 px-2 mb-4">
+                <label for="email" class="block text-sm text-gray-600 mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="w-full px-2 mb-4">
+                <label for="message" class="block text-sm text-gray-600 mb-2">Service</label>
+                <textarea id="message" name="message" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+              <div class="w-full px-2">
+                <button type="submit" class="w-70 bg-blue-950 text-white py-2 px-4 rounded hover:bg-yellow-700">
+                  Submit Form
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cyprus -->
+  <section class="text-gray-600 body-font relative">
+    <div class="container mx-auto px-5 py-24">
+      <div class="flex flex-wrap lg:flex-nowrap">
+        <!-- Left Side (Text Section) -->
+        <div class="w-full lg:w-2/5 lg:pr-10 mb-10 lg:mb-0">
+          <h2 id="cyprus-u" class="text-3xl font-bold text-yellow-700 mb-4 mt-10">Cyprus Universities </h2>
+          <!-- <p class="text-lg text-gray-700 mb-6">
+            Discover endless opportunities and connect with global institutions. Join us to unlock your potential and achieve your dreams.
+          </p> -->
+          <ul class="list-disc list-inside text-gray-900  mt-10 text-sm sm:text-base lg:text-lg">
+            <li>University of Cyprus</li>
+            <li>Cyprus University of Technology (CUT)</li>
+            <li>Eastern Mediterranean University (EMU)</li>
+            <li>University of Nicosia</li>
+            <li>Frederick University</li>
+            <li>Cyprus International University (CIU)</li>
+            <li>European University Cyprus (EUC)</li>
+            <li>Near East University</li>
+            <li>University of the Arts London (UAL) - Cyprus</li>
+            <li>The Open University of Cyprus</li>
+          </ul>
+        </div>
+        <!-- Right Side (Form Section) -->
+        <div class="w-full lg:w-3/5 bg-white rounded-lg shadow-lg p-8">
+          <h2 class="text-2xl font-bold text-blue-950 mb-6">Register Consultation for Cyprus</h2>
+          <form id="cyp-form" data-country="Cyprus">
+            <div class="flex flex-wrap -mx-2">
+              <div class="w-full md:w-1/2 px-2 mb-4">
+                <label for="name" class="block text-sm text-gray-600 mb-2">Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="w-full md:w-1/2 px-2 mb-4">
+                <label for="email" class="block text-sm text-gray-600 mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="w-full px-2 mb-4">
+                <label for="message" class="block text-sm text-gray-600 mb-2">Service</label>
+                <textarea id="message" name="message" class="w-full bg-gray-100 border border-gray-300 rounded py-2 px-3 text-gray-700 h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+              <div class="w-full px-2">
+                <button type="submit" class="w-70 bg-blue-950 text-white py-2 px-4 rounded hover:bg-yellow-700">
+                  Submit Form
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+  import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
+
+  // Your Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyA6xDgBW-9KyqdfSTdZK5sDI7aaSvUmbxg",
+    authDomain: "dreamers-9a01a.firebaseapp.com",
+    databaseURL: "https://dreamers-9a01a-default-rtdb.firebaseio.com/",
+    projectId: "dreamers-9a01a",
+    storageBucket: "dreamers-9a01a.firebasestorage.app",
+    messagingSenderId: "907023324158",
+    appId: "1:907023324158:web:b2c0a6ea7383a50fa4a6af",
+    measurementId: "G-VRE49PY5FM"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+   // Function to handle form submission for any country
+   function handleFormSubmission(form) {
+    // Get the country from the form's data attribute
+    const country = form.getAttribute('data-country');
+    
+    // Get the form values
+    const name = form.querySelector('[name="name"]').value;
+    const email = form.querySelector('[name="email"]').value;
+    const message = form.querySelector('[name="message"]').value;
+
+    // Push data to the Firebase database under the country-specific node
+    const countryRef = ref(database, `${country}_consultations`); // Dynamic path based on country
+    push(countryRef, {
+      name: name,
+      email: email,
+      message: message,
+      timestamp: Date.now() // Store timestamp
+    })
+    .then(() => {
+      alert(`Your consultation request for ${country} has been submitted successfully!`);
+      form.reset(); // Reset form after submission
+    })
+    .catch((error) => {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting your form. Please try again.');
+    });
+  }
+
+  // Listen for form submissions
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent default form submission behavior
+      handleFormSubmission(form); // Call the function to handle the submission
+    });
+  });
+  </script>
+
+      <footer class="text-white body-font bg-blue-950">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a href="index.html" class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+      <img src="logo.png" alt="logo" class="h-100 w-100">
+            </a>
+            <p class="mt-2 text-sm text-gray-400">We promise to fly you out to your dream.</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-xl mb-3  hover:text-yellow-600">Quick Links</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a href="index.html" class="text-white hover:text-yellow-600">Home</a>
+                </li>
+                <li>
+                  <a href="services.html" class="text-white hover:text-yellow-600">Services</a>
+                </li>
+                <li>
+                  <a href="clgofeng.html" class="text-white hover:text-yellow-600">Dreamers College of English</a>
+                </li>
+                <li>
+                  <a href="destinations.html" class="text-white hover:text-yellow-600">Study Destination</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white hover:text-yellow-600">Contact</a>
+                </li>
+                <li>
+                  <a href="query.html" class="text-white hover:text-yellow-600">Quick Query</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-xl mb-3  hover:text-yellow-600">Study Destinations</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a href="destinations.html#uk-u"  class="text-white hover:text-yellow-600">United Kingdom</a>
+                </li>
+                <li>
+                  <a href="destinations.html#australia-u" class="text-white hover:text-yellow-600">Australia</a>
+                </li>
+                <li>
+                  <a href="destinations.html#ireland-u" class="text-white hover:text-yellow-600">Ireland</a>
+                </li>
+                <li>
+                  <a href="destinations.html#uae-u" class="text-white hover:text-yellow-600">UAE</a>
+                </li>
+                <li>
+                  <a href="destinations.html#cyprus-u" class="text-white hover:text-yellow-600">Cyprus</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              
+              <h2 class="title-font font-medium text-white tracking-widest text-xl mb-3  hover:text-yellow-600">Services</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white hover:text-yellow-600">Destination Selection</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-yellow-600">Course selection</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-yellow-600">University Selection</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-yellow-600">Language Test Preparation/Assessment</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-yellow-600">Interview Guidance</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-yellow-600">Visa Application Assistance</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-xl mb-3  hover:text-yellow-600">Get in Touch</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white hover:text-yellow-600">Government College Women University, Block Z Madina Town, Faisalabad, Punjab, Pakistan.</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-yellow-600">Dubai, UAE:
+                    Tanvi Business Center, Port Saeed Deira</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-yellow-600">dreamers@uspakistan.co.uk</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-yellow-600">UAN:03051111111</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-700 text-sm text-center sm:text-left"> Copyright © 2024 us-pakistan.co.uk
+          
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start text-gray-700">
+       
+            <p>Privacy Policy & Terms</p>
+            
+            
+            
+            </span>
+          </div>
+        </div>
+      </footer>
+
+
+      
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+nav{
+  background-color: #172554;
+}
+
+nav ul{
+  width: 100%;
+  height: 5rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  margin-left: 22px;
+}
+
+nav a{
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0.66rem 0.5rem;
+  border-radius: 7rem;
+  transition: 0.2s;
+  font-size: 1rem;
+  margin: 0.4rem;
+}
+
+nav a.hovers:hover{
+  color: #F0F8FF;
+  background-color: #0076CE;
+}
+
+nav a.active{
+  color: #F0F8FF;
+  background-color: #0076CE;
+}
+
+nav a.cta{
+  background-color: #F0F8FF;
+  color: #034694;
+  font-weight: bold;
+  transition: 0.2s;
+  padding: 10px 20px;
+}
+
+nav a.cta:hover{
+  background-color: rgb(196, 196, 196);
+  color: #034694;
+}
+
+nav li:first-child{
+  margin-right: auto;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 17rem;
+  z-index: 999;
+  background-color: #f0f8ff00;
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  margin: 0.625rem;
+}
+
+.sidebar a{
+  padding-top: 0.13rem;
+  padding-bottom: 0.13rem;
+  border-radius: 7.5rem;
+}
+
+@media(max-width: 1016px){
+  .hideonmobile{
+    display: none;
+  }
+}
